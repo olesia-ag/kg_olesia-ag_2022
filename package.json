@@ -1,19 +1,27 @@
 {
-  "name": "kargo_olesia_test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/olesia-ag/kg_olesia-ag_2022.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/olesia-ag/kg_olesia-ag_2022/issues"
-  },
-  "homepage": "https://github.com/olesia-ag/kg_olesia-ag_2022#readme"
+	"name": "kargo_olesia_test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"test": "mocha -w"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/olesia-ag/kg_olesia-ag_2022.git"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.10.5",
+		"@babel/core": "^7.11.1",
+		"@babel/preset-env": "^7.11.0",
+		"@babel/register": "^7.10.5",
+		"chai": "^4.2.0",
+		"mocha": "^8.1.1"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/olesia-ag/kg_olesia-ag_2022/issues"
+	},
+	"homepage": "https://github.com/olesia-ag/kg_olesia-ag_2022#readme"
 }
