@@ -28,9 +28,15 @@ function transformNumber(num) {
 
 export function convertArray(arr) {
 	if (!arr.length) return arr;
-	else {
-		return arr.map((elem) => {
+	return arr.map((elem) => {
+		if (elem.toString().length > 1) {
+			return elem
+				.toString()
+				.split('')
+				.map((num) => transformNumber(num))
+				.join('');
+		} else {
 			return transformNumber(elem);
-		});
-	}
+		}
+	});
 }

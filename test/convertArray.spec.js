@@ -17,5 +17,15 @@ describe('convertArray function which accepts an array of integers and returns a
 		]);
 		done();
 	});
+  it('returns correct result if an argument array includes integeres with two or more digits', (done) => {
+		expect(convertArray([25])).to.eql(['TwoFive']);
+		expect(convertArray([13, 0, 789, 4000])).to.eql([
+			'OneThree',
+			'Zero',
+			'SevenEightNine',
+			'FourZeroZeroZero',
+		]);
+		done();
+	});
 
 })
