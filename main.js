@@ -1,3 +1,8 @@
+let myArgs = process.argv.slice(2);
+
+console.log(convertArray(myArgs));
+
+
 function transformNumber(num) {
 	let numStr = num.toString();
 	switch (numStr) {
